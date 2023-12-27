@@ -1,6 +1,5 @@
 import React from 'react';
 import HigherOrderFunctions from './components/HigherOrderComponent'
-import './App.css';
 
 
 

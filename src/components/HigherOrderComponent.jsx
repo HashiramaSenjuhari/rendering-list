@@ -11,6 +11,18 @@ class HigherOrderFunctions extends Component {
     ]
   }
 
+  renderItems = () => {
+    return this.state.userData.map((item) => (
+      <li key={item.id} className="list-elements">
+        <span>Id: {item.id}</span>
+        <span>Name: {item.name}</span>
+        <span>User Type: {item.user_type}</span>
+        <span>Years: {item.years}</span>
+      </li>
+    ));
+  }
+  
+
   filterDataByUserType = (userType) => {
     const filteredData = this.state.userData.filter((user) => user.user_type === userType)
     return filteredData.map((item) => (
